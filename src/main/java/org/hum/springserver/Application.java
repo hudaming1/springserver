@@ -15,6 +15,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class Application {
 	private static final Logger logger = LoggerFactory.getLogger(Application.class);
 
+	/**
+	 * keytool -genkey -alias tomcat  -storetype PKCS12 -keyalg RSA -keysize 2048  -keystore keystore.p12 -validity 3650
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 		logger.info("SpringBoot Start Success");
